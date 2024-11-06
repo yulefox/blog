@@ -24,10 +24,17 @@ features:
     details: Flexible plugin API, allowing plugins to provide lots of plug-and-play features for your site.
   - title: Bundlers
     details: Default bundler is Vite, while Webpack is also supported. Choose the one you like!
-
-footer: MIT Licensed | Copyright © 2024-ICP 备案号: [蜀ICP备2023007226号-1](https://beian.miit.gov.cn/) ![beian.png](/images/beian.png)[川公网安备51019002007443号](https://beian.mps.gov.cn/#/query/webSearch?code=51019002007443)
 ---
 
 This is the content of home page. Check [Home Page Docs][default-theme-home] for more details.
 
 [default-theme-home]: https://vuejs.press/reference/default-theme/frontmatter.html#home-page
+
+<footer>
+    <p>
+        MIT Licensed | Copyright © 2024 - ICP 备案号: 
+        <a href="https://beian.miit.gov.cn/">蜀ICP备2023007226号-1</a>
+        <img src="/images/beian.png" alt="beian.png" />
+        <a href="https://beian.mps.gov.cn/#/query/webSearch?code=51019002007443">川公网安备51019002007443号</a>
+    </p>
+</footer>
