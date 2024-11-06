@@ -11,8 +11,10 @@ services:
     build: .
     volumes:
       - .:/app
+      - ~/.ssh:/home/appuser/.ssh:ro
+    environment:
+      - GIT_SSH_COMMAND=ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
     ports:
       - "3030:3030"
-    #command: sh -c "node test.js; tail -f /dev/null"
     restart: always
 
