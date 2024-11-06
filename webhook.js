@@ -8,11 +8,6 @@ app.use(bodyParser.json());
 const REPO_DIR = '/app';
 const BRANCH_NAME = 'main'; // or your specific branch
 
-app.get('/', (req, res) => {
-    console.log(req);
-    res.send('bingo');
-});
-
 app.post('/', (req, res) => {
   const payload = req.body;
 
@@ -46,9 +41,6 @@ app.post('/', (req, res) => {
         res.send('No changes');
       }
     });
-  } else {
-    console.log('Received', payload, '.', payload.ref, 'but not', BRANCH_NAME);
-    res.status(400).send('Not a valid branch');
   }
 });
 
