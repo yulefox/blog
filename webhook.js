@@ -8,7 +8,7 @@ app.use(bodyParser.json());
 const REPO_DIR = '/app';
 const BRANCH_NAME = 'main'; // or your specific branch
 
-app.post('/webhook', (req, res) => {
+app.post('/', (req, res) => {
   const payload = req.body;
 
   if (payload.ref === `refs/heads/${BRANCH_NAME}`) {
