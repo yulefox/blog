@@ -1,5 +1,10 @@
 FROM node:18
 
+RUN sed -i 's|http://deb.debian.org/debian|https://mirrors.cloud.tencent.com/debian|g' /etc/apt/sources.list.d/debian.sources && \
+    apt-get clean && \
+    apt-get update && \
+    apt-get install -y git openssh-client
+
 WORKDIR /app
 
 COPY package.json yarn.lock .yarnrc ./
