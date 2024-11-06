@@ -47,6 +47,7 @@ app.post('/', (req, res) => {
       }
     });
   } else {
+    console.log('Received', payload, '.', payload.ref, 'but not', BRANCH_NAME);
     res.status(400).send('Not a valid branch');
   }
 });
