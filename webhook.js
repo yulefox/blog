@@ -27,7 +27,7 @@ app.post('/webhook', (req, res) => {
 
         // Run your build commands here
         const exec = require('child_process').exec;
-        exec('npm install && vuepress build docs', { cwd: REPO_DIR }, (err, stdout, stderr) => {
+        exec('cnpm install && vuepress build docs', { cwd: REPO_DIR }, (err, stdout, stderr) => {
           if (err) {
             console.error('Build failed:', stderr);
             return res.status(500).send('Build failed');
@@ -46,6 +46,6 @@ app.post('/webhook', (req, res) => {
   }
 });
 
-app.listen(3000, () => {
-  console.log('Webhook listener running on port 3000');
+app.listen(3030, () => {
+  console.log('Webhook listener running on port 3030');
 });
