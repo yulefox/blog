@@ -11,5 +11,7 @@ COPY . .
 # 暴露端口
 EXPOSE 3030
 
+USER node
+
 # 启动 webhook.js
 CMD ["node", "webhook.js"]
