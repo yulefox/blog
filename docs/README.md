@@ -34,7 +34,7 @@ This is the content of home page. Check [Home Page Docs][default-theme-home] for
     <p>
         MIT Licensed | Copyright © 2024 - ICP 备案号: 
         <a href="https://beian.miit.gov.cn/">蜀ICP备2023007226号-1</a>
-        <img src="/images/beian.png" alt="beian.png" />
+        <img src="https://beian.mps.gov.cn/web/assets/logo01.6189a29f.png" class="w-full" style="width: 16px;">
         <a href="https://beian.mps.gov.cn/#/query/webSearch?code=51019002007443">川公网安备51019002007443号</a>
     </p>
 </footer>
