@@ -27,7 +27,7 @@ app.post('/', (req, res) => {
 
         // Run your build commands here
         const exec = require('child_process').exec;
-        exec('yarn install && vuepress build docs', { cwd: REPO_DIR }, (err, stdout, stderr) => {
+        exec('yarn docs:build', { cwd: REPO_DIR }, (err, stdout, stderr) => {
           if (err) {
             console.error('Build failed:', stderr);
             return res.status(500).send('Build failed');
