@@ -8,6 +8,11 @@ app.use(bodyParser.json());
 const REPO_DIR = '/app';
 const BRANCH_NAME = 'main'; // or your specific branch
 
+app.get('/', (req, res) => {
+    console.log(req);
+    res.send('bingo');
+});
+
 app.post('/', (req, res) => {
   const payload = req.body;
 
@@ -27,7 +32,7 @@ app.post('/', (req, res) => {
 
         // Run your build commands here
         const exec = require('child_process').exec;
-        exec('cnpm install && vuepress build docs', { cwd: REPO_DIR }, (err, stdout, stderr) => {
+        exec('yarn install && vuepress build docs', { cwd: REPO_DIR }, (err, stdout, stderr) => {
           if (err) {
             console.error('Build failed:', stderr);
             return res.status(500).send('Build failed');
