@@ -12,22 +12,23 @@ export default defineUserConfig({
   theme: defaultTheme({
     logo: '/images/fox.png',
     repo: 'yulefox/blog',
+    externalLinkIcon: false,
     navbar: [
       '/',
       {
-        text: 'Article',
+        text: '文章',
         link: '/article/',
       },
       {
-        text: 'Category',
+        text: '分类',
         link: '/category/',
       },
       {
-        text: 'Tag',
+        text: '标记',
         link: '/tag/',
       },
       {
-        text: 'Timeline',
+        text: '时间线',
         link: '/timeline/',
       },
     ],
