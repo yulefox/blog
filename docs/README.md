@@ -3,38 +3,48 @@ home: true
 title: Home
 heroImage: /images/fox.png
 actions:
-  - text: Get Started
-    link: /article
+  - text: 我要开动了
+    link: /article/
     type: primary
 
-  - text: Introduction
+  - text: GitHub
     link: https://github.com/yulefox/blog
     type: secondary
 
 features:
-  - title: Simplicity First
-    details: Minimal setup with markdown-centered project structure helps you focus on writing.
-  - title: Vue-Powered
-    details: Enjoy the dev experience of Vue, use Vue components in markdown, and develop custom themes with Vue.
-  - title: Performant
-    details: VuePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.
-  - title: Themes
-    details: Providing a default theme out of the box. You can also choose a community theme or create your own one.
-  - title: Plugins
-    details: Flexible plugin API, allowing plugins to provide lots of plug-and-play features for your site.
-  - title: Bundlers
-    details: Default bundler is Vite, while Webpack is also supported. Choose the one you like!
+  - title: 笔记
+    details: 好用的技术、好看的设计、好玩的游戏
+  - title: 感悟
+    details: 人生、世界、宇宙
+  - title: 最近事项
+    details: 周六、周日、下周二、下周六
+  - title: 谈书
+    details: 天晴时，晒书几页
+  - title: 论字
+    details: 阴雨时，涂鸦几笔
+  - title: 最近在读
+    details: 《东晋门阀政治》、《中国古代社会》
 ---
-
-This is the content of home page. Check [Home Page Docs][default-theme-home] for more details.
 
 [default-theme-home]: https://vuejs.press/reference/default-theme/frontmatter.html#home-page
 
+<style>
+  footer {
+    text-align: center;
+  }
+  footer img {
+    display: inline-block;
+  }
+</style>
+
 <footer>
-    <p>
-        MIT Licensed | Copyright © 2024 - ICP 备案号: 
-        <a href="https://beian.miit.gov.cn/">蜀ICP备2023007226号-1</a>
-        <img src="https://beian.mps.gov.cn/web/assets/logo01.6189a29f.png" class="w-full" style="width: 16px;">
-        <a href="https://beian.mps.gov.cn/#/query/webSearch?code=51019002007443">川公网安备51019002007443号</a>
-    </p>
+  <p>
+    Copyright © 2024 Yule Fox
+    <span>  </span>
+    <a href="https://beian.miit.gov.cn/">蜀ICP备2023007226号-1</a>
+    <img src="https://beian.mps.gov.cn/web/assets/logo01.6189a29f.png" class="w-full" style="width: 16px;">
+    <span>  </span>
+    <a href="https://beian.mps.gov.cn/#/query/webSearch?code=51019002007443">川公网安备51019002007443号</a>
+  </p>
 </footer>
+
