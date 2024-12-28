@@ -28,7 +28,7 @@ app.post('/', (req, res) => {
 
     git.pull('origin', BRANCH_NAME, (err, update) => {
       if (err) {
-        log_error('Failed to pull repository:', err);
+        log_error(`Failed to pull repository: ${err}`);
         return res.status(500).send('Deployment failed');
       }
 
@@ -39,7 +39,7 @@ app.post('/', (req, res) => {
         const exec = require('child_process').exec;
         exec('yarn docs:build', { cwd: REPO_DIR }, (err, stdout, stderr) => {
           if (err) {
-            log_error('Build failed:', err);
+            log_error(`Build failed: ${err}`);
             return res.status(500).send('Build failed');
           }
 
