@@ -39,11 +39,11 @@ app.post('/', (req, res) => {
         const exec = require('child_process').exec;
         exec('yarn docs:build', { cwd: REPO_DIR }, (err, stdout, stderr) => {
           if (err) {
-            log_error('Build failed:', stderr);
+            log_error('Build failed:', err);
             return res.status(500).send('Build failed');
           }
 
-          log_info('Build success:', stdout);
+          log_info('Build success.');
           res.send('Deployed successfully');
         });
       } else {
