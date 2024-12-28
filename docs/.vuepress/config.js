@@ -5,7 +5,7 @@ import { viteBundler } from '@vuepress/bundler-vite'
 
 export default defineUserConfig({
   lang: 'zh-CN',
-
+  head: [['link', { rel: 'icon', href: '/images/fox.png' }]],
   title: '大象不长毛',
   description: '...',
 
