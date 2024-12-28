@@ -51,6 +51,9 @@ app.post('/', (req, res) => {
         res.send('No changes');
       }
     });
+  } else {
+    log_info(`Invalid payload: ${JSON.stringify(payload)}`);
+    res.status(500).send('Invalid request');
   }
 });
 
