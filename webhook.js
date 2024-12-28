@@ -52,7 +52,6 @@ app.post('/', (req, res) => {
       }
     });
   } else {
-    log_info(`Invalid payload: ${JSON.stringify(payload)}`);
     res.status(500).send('Invalid request');
   }
 });
