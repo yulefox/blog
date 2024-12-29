@@ -36,9 +36,12 @@ defineProps({
           >Date: {{ new Date(info.date).toLocaleDateString() }}</span
         >
 
-        <span v-if="info.category" class="category"
-          >Category: {{ info.category.join(', ') }}</span
-        >
+        <span v-if="Array.isArray(info.category)">
+          {{ info.category.join(', ') }}
+        </span>
+        <span v-else>
+          {{ info.category || '未分类' }}
+        </span>
 
         <span v-if="info.tag" class="tag">Tag: {{ info.tag.join(', ') }}</span>
       </div>
@@ -50,6 +53,11 @@ defineProps({
 
 <style lang="scss">
 @use '@vuepress/theme-default/styles/mixins';
+
+.page {
+  padding-top: 3.6rem; /* 避免内容被 Navbar 遮挡 */
+  padding-bottom: 2rem;
+}
 
 .article-wrapper {
   @include mixins.content_wrapper;

@@ -42,6 +42,7 @@ const tagMap = useBlogCategory('tag')
   & {
     padding-top: 1rem !important;
     padding-bottom: 0 !important;
+
     font-size: 14px;
   }
 
