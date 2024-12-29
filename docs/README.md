@@ -39,11 +39,13 @@ features:
 
 <footer>
   <p>
-    Copyright © 2024 Yule Fox
-    <span>  </span>
+    Copyright © 2024 Yule Fox 
+    <span style="margin-left: 10px;"></span>
+    <a href="https://v2.vuepress.vuejs.org/zh/">VuePress</a>
+    <br/>
     <a href="https://beian.miit.gov.cn/">蜀ICP备2023007226号-1</a>
+    <span style="margin-left: 10px;"></span>
     <img src="https://beian.mps.gov.cn/web/assets/logo01.6189a29f.png" class="w-full" style="width: 16px;">
-    <span>  </span>
     <a href="https://beian.mps.gov.cn/#/query/webSearch?code=51019002007443">川公网安备51019002007443号</a>
   </p>
 </footer>

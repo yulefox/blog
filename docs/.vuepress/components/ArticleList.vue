@@ -53,7 +53,10 @@ defineProps({
 
 .article-wrapper {
   @include mixins.content_wrapper;
-  text-align: center;
+
+  & {
+    text-align: center;
+  }
 }
 
 .article {
